@@ -194,7 +194,8 @@ a {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 1600px;
+        max-width: 1600px;
+        margin: 0 auto;
 }
 .hero-container{
     justify-content: center;
@@ -250,19 +251,15 @@ a {
 margin-right: 30px;
 }
 .quality-item-icon{
-    display: block;
-    content: "";
+    display: flex;
     width: 270px;
     height: 120px;
     background-color:var(--title-background-color) ;
     border-radius: 4px;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
-.quality-icon{
-    margin-top: 25px;
-    margin-left: 100px;
-}
-
 .quality-title{
     line-height: 1.14;
     text-transform: uppercase;
@@ -458,18 +455,14 @@ margin-right: 30px;
 /*-------------Social--------------*/
 .footer-container{
     display: flex;
+    align-items: baseline;
 
 }
 .footer-social-section{
     display: block;
     justify-content: center;
     align-content: center;
-    margin-top: 12px;
     margin-left: 70px;
-    
-    
-    
-    
 }
 .footer-social-text{
     line-height: 1.14;
@@ -565,6 +558,11 @@ margin-right: 30px;
 .main-portfolio-list:nth-child(- n + 3){
     margin-bottom: 0;
 }
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
 .portfolio-item{  
     flex-basis: calc(100%/3 - 30px);
     width: 370px;
@@ -578,8 +576,6 @@ margin-right: 30px;
 }
 .portfolio-item:hover,
 .portfolio-item:focus{
-    border: 1px solid #EEEEEE;
-box-sizing: border-box;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .text-position{
