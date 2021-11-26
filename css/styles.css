@@ -284,8 +284,6 @@ margin-right: 30px;
 .about-item:not(:last-child) {
     margin-right: 30px; 
 }
-.about-item{
-}
 /*--------------TEAM------------------*/
 .team{
     padding-top: 94px;
